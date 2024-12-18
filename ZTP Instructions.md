@@ -66,7 +66,12 @@ Devices send a vendor class identifier string in DHCP requests to the DHCP serve
 
 This option is a good idea if you want to load the same OS and/or a starting configuration to many of the same device types.
 
-On Aruba devices you can obtain this string with the command `show dhcp client vendor-specific`.
+On Aruba devices you can obtain this string with the command :
+
+| hardware            | vendor class cmd                                       |
+|---------------------|--------------------------------------------------------|
+| Aruba series 2930F  | `show dhcp client vendor-specific`                     |
+| Aruba series 6000   | `show dhcp client vendor-class-identifier`             |
 
 On Juniper devices, a zeroized device or device with factory defaults should have this string listed in the configuration under the interfaces section on the interfaces configured for DHCP.
 
